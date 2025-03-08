@@ -1,0 +1,41 @@
+.invoice-item {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items on small screens */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    gap: 10px; /* Provides spacing when wrapping */
+}
+
+.invoice-item:last-child {
+    border-bottom: none;
+}
+
+.invoice-item p {
+    margin: 5px 0;
+    flex: 1; /*  Distributes space evenly */
+    min-width: 120px; /*  Prevents text from squeezing */
+}
+
+.invoice-item-name {
+    font-weight: bold;
+}
+
+.invoice-item-price {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/*  Mobile-Friendly Styling */
+@media (max-width: 768px) {
+    .invoice-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .invoice-item p {
+        width: 100%;
+        text-align: left;
+    }
+}

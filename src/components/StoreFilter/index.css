@@ -1,0 +1,37 @@
+/* Store Filter Container */
+.store-filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Dropdown Select */
+.store-filter-container select {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Focus Effect */
+.store-filter-container select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+
+/* 🔹 Mobile Responsive */
+@media (max-width: 600px) {
+    .store-filter-container select {
+        width: 90%;
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+

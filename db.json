@@ -1,0 +1,117 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@example.com",
+      "password": "admin123",
+      "store": "Tech Store"
+    },
+    {
+      "id": "2",
+      "email": "user@example.com",
+      "password": "user123",
+      "store": "Fashion Hub"
+    }
+  ],
+  "invoices": [
+    {
+      "id": 1,
+      "storeName": "TechMart",
+      "orderId": "INV1001",
+      "date": "2025-03-01",
+      "grandTotalWithoutTax": 5000,
+      "grandTotalWithTax": 5500,
+      "items": [
+        {
+          "productName": "Laptop",
+          "quantity": 1,
+          "regularPrice": 5000,
+          "dealPrice": 4800,
+          "itemTotal": 4800,
+          "tax": 700
+        },
+        {
+          "productName": "Mouse",
+          "quantity": 2,
+          "regularPrice": 500,
+          "dealPrice": 450,
+          "itemTotal": 900,
+          "tax": 50
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "storeName": "GadgetWorld",
+      "orderId": "INV1002",
+      "date": "2025-03-05",
+      "grandTotalWithoutTax": 3000,
+      "grandTotalWithTax": 3300,
+      "items": [
+        {
+          "productName": "Smartphone",
+          "quantity": 1,
+          "regularPrice": 3000,
+          "dealPrice": 2800,
+          "itemTotal": 2800,
+          "tax": 500
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "storeName": "HomeElectro",
+      "orderId": "INV1003",
+      "date": "2025-03-07",
+      "grandTotalWithoutTax": 7000,
+      "grandTotalWithTax": 7700,
+      "items": [
+        {
+          "productName": "Refrigerator",
+          "quantity": 1,
+          "regularPrice": 7000,
+          "dealPrice": 6700,
+          "itemTotal": 6700,
+          "tax": 1000
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "2",
+      "store": "Tech Store",
+      "name": "Mouse",
+      "description": "Wireless mouse",
+      "price": 249
+    },
+    {
+      "id": "3",
+      "store": "Fashion Hub",
+      "name": "T-Shirt",
+      "description": "Cotton round-neck t-shirt",
+      "price": 1500
+    },
+    {
+      "id": "a0c5",
+      "name": "Hp laptop",
+      "description": "i5 generation",
+      "store": "Amazon",
+      "price": 53000
+    },
+    {
+      "id": "ed20",
+      "name": "Iphone 16",
+      "description": "Advanced Apple intelligence",
+      "store": "Apple",
+      "price": 160000
+    },
+    {
+      "id": "eba9",
+      "name": "Haier Qled tv",
+      "description": "high definition video resolution with 4k video output",
+      "store": "Amazon",
+      "price": 55000
+    }
+  ]
+}

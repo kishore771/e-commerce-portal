@@ -1,0 +1,88 @@
+.dashboard-container {
+  padding: 20px;
+  text-align: center;
+  background-image: url("https://i.postimg.cc/DwPGj7Zb/e-commerce-pictures-ieb3cw7wuo7qbyez.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* Title Styling */
+.dashboard-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff; /* Ensuring visibility on background */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Desktop View: Cards in a Row */
+.dashboard-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows wrapping for better responsiveness */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Card Styles */
+.card {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Subtle hover effect */
+}
+
+.card h2 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/*  Mobile-Friendly Design */
+@media (max-width: 768px) {
+  .dashboard-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .dashboard-title {
+    font-size: 26px;
+  }
+}
+
+/*  Ultra Small Screens (Extra Enhancements) */
+@media (max-width: 480px) {
+  .dashboard-title {
+    font-size: 22px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 280px;
+    padding: 15px;
+  }
+
+  .card p {
+    font-size: 20px;
+  }
+}

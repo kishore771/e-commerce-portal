@@ -1,0 +1,40 @@
+/* Search Bar Container */
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Search Input Field */
+.search-bar-container input {
+    width: 100%;
+    max-width: 400px; /* Limits width on larger screens */
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Focus Effect */
+.search-bar-container input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* 🔹 Mobile Responsive */
+@media (max-width: 600px) {
+    .search-bar-container {
+        padding: 5px;
+    }
+
+    .search-bar-container input {
+        width: 90%;
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
